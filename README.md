@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Counter App (Next.js + Zustand)
 
-## Getting Started
+Este proyecto es una aplicación simple de contador construida con Next.js, Zustand y TailwindCSS.
 
-First, run the development server:
+Permite incrementar un contador con reglas condicionales (par / impar), resetear el valor y visualizar el estado global desde múltiples componentes.
+
+---
+
+## 🚀 Tecnologías
+
+- Next.js
+- React
+- Zustand
+- Tailwind CSS
+
+---
+
+## 📦 Instalación
+
+Clonar el repositorio:
 
 ```bash
+git clone <URL_DEL_REPO>
+
+Entrar al proyecto:
+
+cd <NOMBRE_DEL_PROYECTO>
+
+Instalar dependencias:
+
+npm install
+
+▶️ Ejecución en desarrollo
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La app se ejecuta en:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧠 Funcionalidad
+Incremento solo si el número es par
+Incremento solo si el número es impar
+Reset del contador
+Estado global compartido con Zustand
+Componente auxiliar que interpreta el estado
 
-## Learn More
+📁 Estructura básica
 
-To learn more about Next.js, take a look at the following resources:
+app/
+  page.tsx
+  analyzer/
+store/
+components/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✨ Proyecto de práctica frontend para aprendizaje de estado global y UI con Next.js.
